@@ -82,13 +82,15 @@ main {
   padding: 10px;
   background-color: rgba(242, 242, 242, 0.6);
   width: 25%;
-  display: flex;
   align-self: flex-start;
 }
 
 @media (max-width: 800px) {
   .articles-section {
     width: 100%;
+  }
+  body {
+    height: 100%;
   }
 }
 
