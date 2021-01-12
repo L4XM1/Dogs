@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(images/puppyalone.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 120vh;
+}
+
+/*----------------- NAVBAR-----------------------------*/
+
+.logo {
+  width: 40px;
+  margin: auto 23px;
+}
+
+nav {
+  overflow: hidden;
+  background-color: rgba(43, 43, 43, 0.6);
+  display: flex;
+  height: 6vh;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+li a:hover {
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
+nav a.active-page {
+  background-color: rgba(128, 128, 128, 0.431);
+}
+
+/* ---------------- MAIN CONTENT ------------------------- */
+
+main {
+  padding-bottom: 5vh;
+  animation: transitionIn 0.75s;
+}
+/* da se main postepeno pomeri */
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-20deg); /* po X osi 3D rotacija */
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.articles-section {
+  margin: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: rgba(242, 242, 242, 0.6);
+  width: 25%;
+  align-self: flex-start;
+}
+
+.images-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h3 > a {
+  text-decoration: none;
+  color: black;
+}
+
+h3 > a:hover {
+  color: #474747;
+}
+
+#minpin,
+#pug,
+#pug-toy {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-article {
+  border: 1px solid black;
+  border-radius: 3%;
+  background-color: rgba(242, 242, 242, 0.6);
+  width: 60vw;
+  position: relative;
+  word-wrap: break-word;
+  margin: 30px;
+  padding: 30px;
+  text-align: justify;
+}
+
+.article-title {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+.main-article-hr {
+  margin: 15px auto 15px auto;
+}
+
+#p1 {
+  text-indent: 4vw;
+}
+
+#source {
+  position: absolute;
+  bottom: 0;
+}
+
+/*------Video------*/
+.video-wrapper {
+  margin-top: 4em;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-----------------------CONTACT FORM-----------------------*/
+
+.contact-form {
+  width: 70%;
+  padding: 2rem;
+}
+
+form {
+  width: 100%;
+}
+
+.required {
+  color: red;
+}
+
+input[type="text"] {
+  width: 30%;
+  height: 2em;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+input[type="email"] {
+  margin: 10px 0;
+  width: 30%;
+  height: 2em;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+input[type="tel"] {
+  width: 2rem;
+  height: 2em;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+select {
+  margin: 2vh 0;
+  width: 20%;
+  height: 2em;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+textarea {
+  width: 30%;
+  height: 10em;
+  margin: 2px 0;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+input[type="submit"] {
+  background: linear-gradient(to bottom, #141414 0%, #8f8f8f 100%);
+  color: white;
+  font-size: 1em;
+  border-radius: 7px;
+  margin: 4px 0 0 142px;
+  width: 80px;
+  height: 45px;
+}
+legend,
+form,
+label {
+  color: white;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgb(17, 1, 1);
+}
+label {
+  width: 140px;
+  display: inline-block;
+}
+
+/*-------------footer----------------*/
+footer {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.637);
+  height: 5vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 1.2vh;
+  color: gray;
+}
+
+@media (max-width: 800px) {
+  select,
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+  #submit {
+    margin-left: 0;
+  }
+}

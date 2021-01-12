@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to a website about dogs. Dogs are awesone so read more about them here. "
+    />
+    <title>Dogs - Man's best friends contact</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html "
+          ><img class="logo" src="images/pet.svg" alt="dog paw logo"
+        /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active-page" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="contact-form">
+        <legend><em>Your information</em></legend>
+        <hr style="margin: 10px 100px 25px 5px" />
+        <div>
+          <form action="index.html" method="post">
+            <label for="textName">Name<span class="required">*</span></label>
+            <input type="text" id="textName" name="name" required /> <br />
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" id="email" name="name" required /><br />
+            <label for="phone">Telephone</label>
+            <input type="tel" id="phone" name="phone" /> -
+            <input type="tel" id="phone" name="phone" /> -
+            <input type="tel" id="phone" name="phone" /><br />
+
+            <label for="countryName">Country</label>
+            <select id="countryName" name="countryList">
+              <option value="serbia">Serbia</option>
+              <option value="usa">USA</option></select
+            ><br />
+            <label style="vertical-align: top" for="message"
+              >Message<span class="required">*</span></label
+            >
+            <textarea
+              type="textarea"
+              name="message"
+              id="message"
+              required
+            ></textarea
+            ><br />
+            <input id="submit" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>All photos taken by me</p>
+    </footer>
+  </body>
+</html>
