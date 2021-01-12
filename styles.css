@@ -82,6 +82,7 @@ main {
   padding: 10px;
   background-color: rgba(242, 242, 242, 0.6);
   width: 25%;
+  display: flex;
   align-self: flex-start;
 }
 
