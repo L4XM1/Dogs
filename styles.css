@@ -72,8 +72,16 @@ main {
 }
 .main-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+@media (max-width: 800px) {
+  .articles-section {
+    width: 100%;
+  }
+}
+
 .articles-section {
   margin: 30px;
   border: 1px solid black;
